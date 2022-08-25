@@ -1,0 +1,24 @@
+# To recive the prometheus operator:
+# wget https://github.com/prometheus-operator/kube-prometheus/archive/refs/tags/v0.11.0.tar.gz - Change to the release you want
+# tar -xvf v0.11.0.tar.gz kube-prometheus-0.11.0/manifests/setup/ --strip-components=3
+# Check that the extracted content is present in this files resource list
+# rm v0.11.0.tar.gz
+# Walk through changes for prometheusOperator-***.yaml files from: https://github.com/prometheus-operator/kube-prometheus/tree/main/manifests
+
+resources:
+- 0alertmanagerConfigCustomResourceDefinition.yaml
+- 0alertmanagerCustomResourceDefinition.yaml
+- 0podmonitorCustomResourceDefinition.yaml
+- 0probeCustomResourceDefinition.yaml
+- 0prometheusCustomResourceDefinition.yaml
+- 0prometheusruleCustomResourceDefinition.yaml
+- 0servicemonitorCustomResourceDefinition.yaml
+- 0thanosrulerCustomResourceDefinition.yaml
+- ns.yaml
+- prometheusOperator-clusterRole.yaml
+- prometheusOperator-clusterRoleBinding.yaml
+- prometheusOperator-deployment.yaml
+- prometheusOperator-service.yaml
+- prometheusOperator-serviceAccount.yaml
+
+namespace: prometheus-operator
