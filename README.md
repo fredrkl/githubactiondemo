@@ -1,6 +1,6 @@
 # YAML verifications
 
-This repository shows how to include status checks and YAML verification with kubeval and conftest. The checks are running with GitHub actions.
+This repository shows how to include status checks and YAML verification with [kubeval](https://www.kubeval.com/) and [conftest](https://www.conftest.dev/). The checks are running with GitHub actions.
 
 ![OPA](./images/opa.png)
 
