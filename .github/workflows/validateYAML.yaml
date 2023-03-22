@@ -1,6 +1,6 @@
 name: Validate YAML
 
-on: [push]
+on: [push, workflow_dispatch]
 
 jobs:
   yaml-verifications:
